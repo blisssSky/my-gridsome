@@ -23,6 +23,7 @@
       
   </Layout>
 </template>
+<page-query>
 query Journal {
 	posts: allJournalPost {
     edges {

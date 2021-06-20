@@ -32,21 +32,21 @@ module.exports = {
         }
       }
     },
-    {
-      use: '@gridsome/source-strapi',
-      options: {
-        apiURL: 'http://113.31.103.140:1337/',
-        queryLimit: 10000, // Defaults to 100
-        contentTypes: ['posts','journals','projects'],
-        // singleTypes: ['impressum'],
-        // Possibility to login with a Strapi user,
-        // when content types are not publicly available (optional).
-        // loginData: {
-        //   identifier: '',
-        //   password: ''
-        // }
-      }
-    }
+    // {
+    //   use: '@gridsome/source-strapi',
+    //   options: {
+    //     apiURL: 'http://113.31.103.140:1337/',
+    //     queryLimit: 10000, // Defaults to 100
+    //     contentTypes: ['posts','journals','projects'],
+    //     // singleTypes: ['impressum'],
+    //     // Possibility to login with a Strapi user,
+    //     // when content types are not publicly available (optional).
+    //     // loginData: {
+    //     //   identifier: '',
+    //     //   password: ''
+    //     // }
+    //   }
+    // }
   ],
   transformers: {
     remark: {
