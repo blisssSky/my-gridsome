@@ -23,8 +23,6 @@
       
   </Layout>
 </template>
-
-<page-query>
 query Journal {
 	posts: allJournalPost {
     edges {
@@ -38,9 +36,11 @@ query Journal {
   }
 }
 </page-query>
-
 <script>
 export default {
+    mounted(){
+      console.log(this.$page.posts)
+    }
 }
 </script>
 

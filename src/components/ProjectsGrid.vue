@@ -7,6 +7,11 @@
                 :alt="item.node.title"
                 class="thumbnail"
             />
+             <!-- <g-image
+                :src="item.node.thumbnail.src"
+                :alt="item.node.title"
+                class="thumbnail"
+            /> -->
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
                 <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span>
@@ -23,6 +28,9 @@ export default {
             type: Array,
             required: true
         }
+    },
+    mounted(){
+      console.log(this.projects)
     }
 }
 </script>
